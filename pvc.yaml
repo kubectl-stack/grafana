@@ -8,4 +8,5 @@ spec:
   resources:
     requests:
       storage: 5Gi
-  volumeName: grafana-pv
+  storageClassName: manual    # must match exactly
+  volumeName: grafana-pv      # explicitly bind to PV
